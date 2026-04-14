@@ -32,7 +32,7 @@ goose’s permissions determine how much autonomy it has when modifying files, u
 | **Chat Only** | goose **only engages in chat**, with no extension use or file modifications | Users who prefer a **conversational AI experience** for analysis, writing, and reasoning tasks without automation |
 
 :::warning
-`Autonomous Mode` is applied by default.
+`Manual Approval mode` (approve) is applied by default in this fork. Every tool call requires confirmation. To run without prompts, switch to `auto` mode via `GOOSE_MODE=auto` — this is required for headless and subagent use.
 :::
 
 ## Configuring goose mode
