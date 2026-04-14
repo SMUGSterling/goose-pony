@@ -46,7 +46,7 @@ impl ProviderDef for AmpAcpProvider {
         Box::pin(async move {
             let config = Config::global();
             let resolved_command = SearchPaths::builder().with_npm().resolve(AMP_ACP_BINARY)?;
-            let goose_mode = config.get_goose_mode().unwrap_or(GooseMode::Auto);
+            let goose_mode = config.get_goose_mode().unwrap_or_default();
 
             let mode_mapping = HashMap::from([
                 (GooseMode::Auto, "auto".to_string()),

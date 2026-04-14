@@ -28,7 +28,7 @@ impl AcpServer {
 
         let goose_mode = config
             .get_goose_mode()
-            .unwrap_or(goose::config::GooseMode::Auto);
+            .unwrap_or_default();
         let disable_session_naming = config.get_goose_disable_session_naming().unwrap_or(false);
 
         let provider_factory: AcpProviderFactory =

@@ -51,7 +51,7 @@ impl ProviderDef for CopilotAcpProvider {
             let resolved_command = SearchPaths::builder()
                 .with_npm()
                 .resolve(COPILOT_ACP_BINARY)?;
-            let goose_mode = config.get_goose_mode().unwrap_or(GooseMode::Auto);
+            let goose_mode = config.get_goose_mode().unwrap_or_default();
 
             let mut args = vec!["--acp".to_string()];
             if model.model_name != ACP_CURRENT_MODEL {

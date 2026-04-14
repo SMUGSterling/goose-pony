@@ -39,7 +39,7 @@ impl SecurityManager {
 
         config
             .get_param::<bool>("SECURITY_PROMPT_ENABLED")
-            .unwrap_or(false)
+            .unwrap_or(true)
     }
 
     fn is_ml_scanning_enabled(&self) -> bool {

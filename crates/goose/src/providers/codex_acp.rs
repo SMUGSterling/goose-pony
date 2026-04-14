@@ -49,7 +49,7 @@ impl ProviderDef for CodexAcpProvider {
                 .resolve(CODEX_ACP_PROVIDER_NAME)?;
             let work_dir = std::env::current_dir().unwrap_or_else(|_| PathBuf::from("."));
             let env = vec![];
-            let goose_mode = config.get_goose_mode().unwrap_or(GooseMode::Auto);
+            let goose_mode = config.get_goose_mode().unwrap_or_default();
             let mcp_servers = extension_configs_to_mcp_servers(&extensions);
 
             // fixed goose mode via -c overrides until session/set-mode works
