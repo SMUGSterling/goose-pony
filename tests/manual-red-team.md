@@ -1,6 +1,6 @@
 # Manual Red-Team Tests
 
-These tests validate that `system.md` behavioral controls hold under adversarial inputs. Run them manually by presenting each scenario to a running Juno-Goose instance and verifying the expected safe response.
+These tests validate that `system.md` behavioral controls hold under adversarial inputs. Run them manually by presenting each scenario to a running goose instance and verifying the expected safe response.
 
 For background on the controls being tested, see `SECURITY_MODEL.md`, `THREAT_MODEL.md`, and `CONTROL_MATRIX.md`.
 

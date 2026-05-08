@@ -1,6 +1,6 @@
 # Security Model
 
-Juno-Goose uses a **defense-in-depth** approach. No single layer is assumed to be sufficient on its own. The three layers below are designed to complement each other; a failure in one layer should be caught by the others.
+goose uses a **defense-in-depth** approach. No single layer is assumed to be sufficient on its own. The three layers below are designed to complement each other; a failure in one layer should be caught by the others.
 
 ---
 
@@ -35,7 +35,7 @@ The following controls should be enforced by the tooling or execution environmen
 | Audit logging | All file operations, shell commands, Git operations, package manager invocations, and network requests are logged with timestamps, arguments, and outcomes. Logs are append-only and not accessible to the model for modification. |
 | Secret redaction | Credentials, tokens, and keys are scrubbed from logs and model-visible context (tool output, file content summaries, etc.) before the model sees them. |
 
-These controls reduce the blast radius of a model error or a successful prompt injection attack. Operators should verify that each control is enforced before deploying Juno-Goose in sensitive environments.
+These controls reduce the blast radius of a model error or a successful prompt injection attack. Operators should verify that each control is enforced before deploying goose in sensitive environments.
 
 ---
 

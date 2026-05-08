@@ -1,6 +1,6 @@
 # Threat Model
 
-This document catalogs threats relevant to Juno-Goose deployments, describes the expected model behavior for each threat, and identifies the runtime control that enforces safety when the model alone is insufficient.
+This document catalogs threats relevant to goose deployments, describes the expected model behavior for each threat, and identifies the runtime control that enforces safety when the model alone is insufficient.
 
 ---
 
